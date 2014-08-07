@@ -1,0 +1,20 @@
+Build.PL
+Changes
+lib/Business/FO/Postalcode.pm
+lib/Class/Business/FO/Postalcode.pm
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+META.json
+META.yml
+README
+t/00-compile.t
+t/changes.t
+t/critic.t
+t/get_all_data.t
+t/get_all_postalcodes.t
+t/kwalitee.t
+t/prerequisites.t
+t/runtests.t
+t/Test/Class/Business/FO/Postalcode.pm
+t/Test/Class/Class/Business/FO/Postalcode.pm
