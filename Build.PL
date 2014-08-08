@@ -10,31 +10,29 @@ my $build = Module::Build->new(
     module_name       => 'Business::FO::Postalcode',
     dist_version_from => 'lib/Business/FO/Postalcode.pm',
     dist_abstract =>
-        'Module contaning danish zipcodes for validation and deployment',
+        'Module contaning Faroese zipcodes for validation and deployment',
     license              => 'artistic_2',
     create_makefile_pl   => 'traditional',
     create_readme        => 1,
     recursive_test_files => 1,
     configure_requires   => { 'Module::Build' => '0.40', },
     test_requires        => {
-        'Test::More'          => '0',    #core
-        'Test::Exception'     => '0',
+        'Test::More'          => '0', #core
         'Test::Kwalitee'      => '0',
         'Test::Perl::Critic'  => '0',
-        'Test::Prereq::Build' => '0',
         'Test::Class'         => '0',
         'Test::CPAN::Changes' => '0',
         'Data::Dumper'        => '0', #core
-        'File::Spec'          => '0',
-        'English'             => '0', #core
         'Env'                 => '0', #core
     },
     requires => {
-        'Exporter'         => '0',       #core
-        'Carp'             => '0',       #core
-        'Params::Validate' => '0',
-        'List::Util'       => '0',
-        'Data::Handle'     => '0',
+        'Exporter'                 => '0', #core
+        'Carp'                     => '0', #core
+        'Params::Validate'         => '0',
+        'List::Util'               => '0',
+        'Data::Handle'             => '0',
+        'perl'                     => '5.10.0',
+        'Business::GL::Postalcode' => '0.02',
     },
     meta_merge => {
         resources => {

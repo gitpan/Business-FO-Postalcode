@@ -3,7 +3,7 @@ NAME
     Islands postal codes
 
 VERSION
-    This documentation describes version 0.01
+    This documentation describes version 0.02
 
 SYNOPSIS
         # basic validation of string
@@ -58,6 +58,7 @@ FEATURES
     *   Look up methods for Faroe Islands postal codes for web applications
         and the like
 
+DESCRIPTION
     This distribution is not the original resource for the included data,
     but simply acts as a simple distribution for Perl use. The central
     source is monitored so this distribution can contain the newest data.
@@ -303,6 +304,8 @@ DEPENDENCIES
     *   <https://metacpan.org/pod/List::Util>
 
     *   <https://metacpan.org/pod/Params::Validate>
+
+    *   <https://metacpan.org/pod/Business::GL::Postalcode>
 
   TEST
     Please note that the above list does not reflect requirements for:

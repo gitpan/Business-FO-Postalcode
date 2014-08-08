@@ -11,7 +11,7 @@ require Exporter;
 our @ISA = qw(Exporter);
 our @EXPORT_OK = qw(get_all_data get_all_postalcodes get_all_cities get_postalcode_from_city get_city_from_postalcode validate_postalcode validate);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub get_all_data {
     my $validator = Class::Business::FO::Postalcode->new();
@@ -71,7 +71,7 @@ Class::Business::FO::Postalcode - validation and listing of Faroe Islands postal
 
 =head1 VERSION
 
-This documentation describes version 0.01
+This documentation describes version 0.02
 
 =head1 SYNOPSIS
 
@@ -130,6 +130,8 @@ This documentation describes version 0.01
 =item * Look up methods for Faroe Islands postal codes for web applications and the like
 
 =back
+
+=head1 DESCRIPTION
 
 This distribution is not the original resource for the included data, but simply
 acts as a simple distribution for Perl use. The central source is monitored so this
@@ -404,6 +406,8 @@ This distribution requires no special configuration or environment.
 =item * L<https://metacpan.org/pod/List::Util>
 
 =item * L<https://metacpan.org/pod/Params::Validate>
+
+=item * L<https://metacpan.org/pod/Business::GL::Postalcode>
 
 =back
 

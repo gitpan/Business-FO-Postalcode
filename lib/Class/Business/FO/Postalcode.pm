@@ -7,7 +7,7 @@ use 5.010; #5.10.0
 use utf8;
 use Data::Handle;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use constant NUM_OF_DIGITS_IN_POSTALCODE => 3;
 
@@ -46,7 +46,7 @@ Class::Business::FO::Postalcode - OO interface to validation and listing of Faro
 
 =head1 VERSION
 
-This documentation describes version 0.01
+This documentation describes version 0.02
 
 =head1 SYNOPSIS
 
@@ -84,6 +84,9 @@ This documentation describes version 0.01
 =back
 
 =head1 DESCRIPTION
+
+Please note that this class inherits from: L<https://metacpan.org/pod/Business::GL::Postalcode>,
+so most of the functionality is implmented in the parent class.
 
 This distribution is not the original resource for the included data, but simply
 acts as a simple distribution for Perl use. The central source is monitored so this
@@ -246,6 +249,26 @@ Please note that city names are not unique, hence the possibility of a list of p
     } else {
         die "$city not found\n";
     }
+
+=head2 num_of_digits_in_postalcode
+
+Mutator to get/set the number of digits used to compose a Greenlandic postal code
+
+    my $validator = Business::FO::Postalcode->new();
+
+    my $rv = $validator->num_of_digits_in_postalcode(3);
+
+    my $digits = $validator->num_of_digits_in_postalcode();
+
+=head2 postal_data
+
+Mutator to get/set the reference to the array comprising the main data structure
+
+    my $validator = Business::FO::Postalcode->new();
+
+    my $rv = $validator->postal_data(\@postal_data);
+
+    my $postal_data = $validator->postal_data();
 
 =head1 DIAGNOSTICS
 
